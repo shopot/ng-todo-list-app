@@ -1,3 +1,5 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { todosRoutes } from './modules/todos';
+
+export const routes: Routes = [...todosRoutes];

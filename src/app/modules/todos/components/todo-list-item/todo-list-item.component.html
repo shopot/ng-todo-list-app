@@ -1,0 +1,16 @@
+<li class="list-group-item d-flex border-0 border-bottom">
+  <div class="form-check flex-grow-1">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      [(checked)]="todo.completed"
+      (change)="toggleTodoCompleted()"
+      id="todo-{{ todo.id }}" />
+    <label class="form-check-label" [class.completed]="todo.completed" for="todo-{{ todo.id }}">
+      {{ todo.task }}
+    </label>
+  </div>
+  <div class="flex-none">
+    <button class="btn btn-danger btn-sm" (click)="deleteTodo()">Delete</button>
+  </div>
+</li>

@@ -1,0 +1,8 @@
+<div class="d-flex align-items-center gap-2 pt-4">
+  <div class="w-100">
+    <input class="form-control" type="text" [(ngModel)]="todoText" placeholder="Add Todo" />
+  </div>
+  <div>
+    <button class="btn btn-primary px-4" (click)="addNewTodo(todoText)">Add</button>
+  </div>
+</div>
